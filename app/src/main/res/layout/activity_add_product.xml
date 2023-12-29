@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".AddProduct">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <!-- Button untuk Memilih Gambar -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/btnp"
+        android:layout_centerHorizontal="true"
+        android:text="Add Image" />
+
+    <!-- ImageView untuk Menampilkan Gambar yang Dipilih -->
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/selectImageButton"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:visibility="gone" />
+
+    <!-- EditText untuk Menampilkan Path Gambar -->
+    <EditText
+        android:id="@+id/imageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedImageView"
+        android:layout_marginTop="8dp"
+        android:hint="Path Gambar"
+        android:inputType="text"
+        android:visibility="gone" />
+
+    <!-- EditText untuk Nama -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_below="@id/imageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:hint="Product Name"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- EditText untuk Brand -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/brand"
+        android:layout_below="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:hint="Brand"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/brandEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- EditText untuk Harga -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/price"
+        android:layout_below="@id/brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:hint="Price"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/priceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- EditText untuk Stok -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/stock"
+        android:layout_below="@id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:hint="Stock"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/stockEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- EditText untuk Rating -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rating"
+        android:layout_below="@id/stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:hint="Rating"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ratingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- EditText untuk Deskripsi -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/description"
+        android:layout_below="@id/rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:hint="Description"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <!-- Button untuk Mengirim Data ke API -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/description"
+        android:backgroundTint="@color/btnp"
+        android:text="Add Product" />
+
+</RelativeLayout>
+</ScrollView>

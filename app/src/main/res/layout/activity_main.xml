@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Base.Theme.MyShoes"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    >
+
+<!--    app:cornerRadius="8dp"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:layout_marginTop="50px"
+        android:textSize="20dp"
+        android:textColor="@color/btnp"
+        android:fontFamily="@font/poppinssemi"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Were happy to see you again. to use your account you should log in first"
+        android:textSize="15dp"
+        android:layout_marginHorizontal="90px"
+        android:layout_marginBottom="20px"
+        android:textAlignment="center"
+        android:textColor="@color/second"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="20px"
+        android:hint="Email"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/envelope_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="0px"
+        android:hint="Password"
+        android:textColorHint="@color/second"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/lock_24"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/recover"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginVertical="0dp"
+        android:layout_marginHorizontal="40px"
+        android:fontFamily="@font/poppinssemi"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="Recovery Password"
+        android:textColor="@color/second" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/btnp"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="20px"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/register"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginVertical="0dp"
+        android:layout_marginHorizontal="10px"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="Register Now"
+        android:textFontWeight="700"
+        android:textColor="@color/btnp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="10dp"
+        android:gravity="start|center_vertical"
+        android:backgroundTint="@color/oren"
+        android:textColor="@android:color/white"
+        app:icon="@drawable/google"
+        app:iconPadding="8dp"
+        app:iconTint="@android:color/white"
+        app:iconSize="24dp"
+        android:text="Continue with Google" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lock_24"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+
+
+    <TextView
+        android:id="@+id/productNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productImageView"
+        android:text="Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productNameTextView"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/productStockTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:text="10"
+            android:drawableStart="@drawable/layers_24"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/productRatingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="0px"
+            android:drawableStart="@drawable/star_24"
+            android:text="Rating"
+            android:gravity="center"
+            android:textColor="@color/oren"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/productBrandTextView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Brand"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_marginTop="4dp"/>-->
+
+    <TextView
+        android:id="@+id/productPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:foregroundGravity="right"
+        android:background="@color/field"
+        android:drawableStart="@drawable/tags_24"
+        android:textColor="@color/btnp"
+        android:fontFamily="@font/poppinsbold"
+        />
+
+
+    <TextView
+        android:id="@+id/productDescTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:text="Description"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+
+
+
+</RelativeLayout>

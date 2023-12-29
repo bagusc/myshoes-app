@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyShoes" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--        <item name="colorPrimaryContainer">@color/purple_500</item>-->
+<!--        <item name="colorOnPrimaryContainer">@color/purple_700</item>-->
+        <item name="android:fontFamily">@font/poppinsregular</item>
+
+    </style>
+
+    <style name="Theme.MyShoes" parent="Base.Theme.MyShoes" />
+</resources>

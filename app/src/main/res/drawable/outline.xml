@@ -1,0 +1,9 @@
+<!-- res/drawable/outline_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="0.2dp"
+    android:color="@color/second"
+    />
+    <corners android:radius="8dp" /> <!-- Radius sudut (sesuaikan dengan keinginan Anda) -->
+    <solid android:color="#FFFFFF" /> <!-- Warna latar belakang -->
+</shape>

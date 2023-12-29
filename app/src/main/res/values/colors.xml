@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="second">#91919C</color>
+    <color name="field">#F4F5FB</color>
+    <color name="btnp">#3861FB</color>
+    <color name="oren">#F19C38</color>
+
+</resources>
