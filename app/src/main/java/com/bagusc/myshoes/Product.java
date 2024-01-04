@@ -1,8 +1,11 @@
 package com.bagusc.myshoes;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Product {
+public class Product implements Parcelable {
     @SerializedName("_id")
     private String id;
     private String name;
@@ -101,5 +104,46 @@ public class Product {
         this.image = image;
     }
 
+    // Implementasi Parcelable
+    @Override
+    public int describeContents() {
+        return 0;
+    }
 
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(id);
+        dest.writeString(name);
+        dest.writeString(brand);
+        dest.writeDouble(price);
+        dest.writeString(description);
+        dest.writeInt(stock);
+        dest.writeDouble(rating);
+        dest.writeString(image);
+        // Tuliskan atribut-atribut lainnya ke dalam parcel
+    }
+
+    public static final Parcelable.Creator<Product> CREATOR = new Parcelable.Creator<Product>() {
+        @Override
+        public Product createFromParcel(Parcel in) {
+            return new Product(in);
+        }
+
+        @Override
+        public Product[] newArray(int size) {
+            return new Product[size];
+        }
+    };
+
+    private Product(Parcel in) {
+        id = in.readString();
+        name = in.readString();
+        brand = in.readString();
+        price = in.readDouble();
+        description = in.readString();
+        stock = in.readInt();
+        rating = in.readDouble();
+        image = in.readString();
+        // Baca atribut-atribut lainnya dari parcel
+    }
 }

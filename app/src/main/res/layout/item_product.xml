@@ -63,13 +63,14 @@
 
 
 
-    <!--    <TextView-->
-<!--        android:id="@+id/productBrandTextView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Brand"-->
-<!--        android:textSize="16sp"-->
-<!--        android:layout_marginTop="4dp"/>-->
+        <TextView
+        android:id="@+id/productBrandTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brand"
+            android:layout_below="@+id/title"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"/>
 
     <TextView
         android:id="@+id/productPriceTextView"
@@ -92,7 +93,7 @@
         android:id="@+id/productDescTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
+android:layout_below="@+id/productBrandTextView"
         android:text="Description"
         android:textSize="14sp"
         android:layout_marginTop="4dp" />

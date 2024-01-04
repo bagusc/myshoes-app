@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Gambar Produk -->
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lock_24" />
+
+    <!-- Informasi Produk -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productImageView"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Nama Produk -->
+        <TextView
+            android:id="@+id/productNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Nama Produk" />
+
+        <!-- Merek Produk -->
+        <TextView
+            android:id="@+id/productBrandTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:text="Merek Produk" />
+
+        <!-- Harga Produk -->
+        <TextView
+            android:id="@+id/productPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:text="Rp 100.000" />
+
+        <!-- Rating -->
+        <TextView
+            android:id="@+id/productRatingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Rating: 4.5" />
+
+        <!-- Stok -->
+        <TextView
+            android:id="@+id/productStockTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Stok: 50" />
+
+        <!-- Deskripsi Produk -->
+        <TextView
+            android:id="@+id/productDescTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Deskripsi Produk yang sangat panjang dan detail." />
+
+        <!-- Tombol Detail (optional) -->
+        <Button
+            android:id="@+id/detailButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat Detail" />
+
+        <!-- Tombol Hapus (optional) -->
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hapus Produk"
+            android:backgroundTint="@color/btnp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
