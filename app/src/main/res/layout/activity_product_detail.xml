@@ -87,6 +87,14 @@
             android:text="Hapus Produk"
             android:backgroundTint="@color/btnp" />
 
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+
 
     </LinearLayout>
 

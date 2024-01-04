@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".EditProductActivity">
+
+    <EditText
+        android:id="@+id/editProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Produk"/>
+
+    <EditText
+        android:id="@+id/editProductBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProductName"
+        android:layout_marginTop="16dp"
+        android:hint="Merek"/>
+
+    <EditText
+        android:id="@+id/editProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProductBrand"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"
+        android:hint="Harga"/>
+
+    <EditText
+        android:id="@+id/editProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProductPrice"
+        android:layout_marginTop="16dp"
+        android:hint="Deskripsi"/>
+
+    <EditText
+        android:id="@+id/editProductStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProductDescription"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:hint="Stok"/>
+
+    <EditText
+        android:id="@+id/editProductRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProductStock"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal"
+        android:hint="Rating"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProductRating"
+        android:layout_marginTop="16dp"
+        android:text="Simpan"/>
+
+</RelativeLayout>
