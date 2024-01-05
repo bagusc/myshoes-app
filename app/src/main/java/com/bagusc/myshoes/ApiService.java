@@ -26,6 +26,19 @@ public interface ApiService {
     Call<Product> updateProduct(@Path("id") String productId, @Body Product updatedProduct);
 
 
+    @Multipart
+    @PUT("products/{id}")
+    Call<Product> updateProductWithImage(
+            @Path("id") String productId,
+            @Part MultipartBody.Part image,
+            @Part("name") RequestBody name,
+            @Part("brand") RequestBody brand,
+            @Part("price") RequestBody price,
+            @Part("description") RequestBody description,
+            @Part("stock") RequestBody stock,
+            @Part("rating") RequestBody rating
+    );
+
 
     @Multipart
     @POST("api/products")  // Sesuaikan dengan endpoint API yang benar

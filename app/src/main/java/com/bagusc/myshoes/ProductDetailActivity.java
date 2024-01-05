@@ -32,8 +32,6 @@ public class ProductDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_detail);
 
-
-
         // Inisialisasi objek retrofit
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://restful-api-myshoes.vercel.app/api/")
@@ -88,6 +86,8 @@ public class ProductDetailActivity extends AppCompatActivity {
         });
 
     }
+
+
 
 
     private void startEditProductActivity(Product product) {

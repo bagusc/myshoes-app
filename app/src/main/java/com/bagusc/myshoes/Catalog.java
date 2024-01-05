@@ -33,6 +33,14 @@ public class Catalog extends AppCompatActivity {
         loadData();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // Refresh data setiap kali kembali ke halaman
+        loadData();
+    }
+
     private void loadData() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://restful-api-myshoes.vercel.app/api/")

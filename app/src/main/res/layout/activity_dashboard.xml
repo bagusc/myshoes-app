@@ -1,7 +1,8 @@
 <!-- res/layout/activity_main.xml -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -9,17 +10,54 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <Button
-            android:id="@+id/all"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="All Product"/>
+            android:text="Total Sepatu"
+            android:fontFamily="@font/poppinssemi"
+            android:textSize="20sp"
+            />
 
-        <Button
-            android:id="@+id/add"
+        <TextView
+            android:id="@+id/textViewTotalData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add Product"/>
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textSize="50sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/all"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/bootheeled_24"
+                android:layout_margin="10dp"
+                android:text="Show All"
+                android:backgroundTint="@color/btnp"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/squareplus_24"
+                android:layout_margin="10dp"
+                android:text="Add New"
+                android:backgroundTint="@color/btnp"
+                android:padding="10dp"
+                />
+
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
