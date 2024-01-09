@@ -10,7 +10,7 @@ public class Product implements Parcelable {
     private String id;
     private String name;
     private String brand;
-    private double price;
+    private int price;
     private String description;
     private int stock;
     private double rating;
@@ -21,7 +21,7 @@ public class Product implements Parcelable {
     private String updatedAt;
 
     // Constructor
-    public Product(String id, String name, String brand, double price, String description, int stock, double rating, String image ) {
+    public Product(String id, String name, String brand, int price, String description, int stock, double rating, String image ) {
         this.id = id;
         this.name = name;
         this.brand = brand;
@@ -60,11 +60,11 @@ public class Product implements Parcelable {
     }
 
     // Getter dan Setter untuk price
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -115,7 +115,7 @@ public class Product implements Parcelable {
         dest.writeString(id);
         dest.writeString(name);
         dest.writeString(brand);
-        dest.writeDouble(price);
+        dest.writeInt(price);
         dest.writeString(description);
         dest.writeInt(stock);
         dest.writeDouble(rating);
@@ -139,7 +139,7 @@ public class Product implements Parcelable {
         id = in.readString();
         name = in.readString();
         brand = in.readString();
-        price = in.readDouble();
+        price = in.readInt();
         description = in.readString();
         stock = in.readInt();
         rating = in.readDouble();

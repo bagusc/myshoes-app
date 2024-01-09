@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "86088075904",
+    "project_id": "myshoes-6f8a2",
+    "storage_bucket": "myshoes-6f8a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86088075904:android:b71c48e6aea5388a773465",
+        "android_client_info": {
+          "package_name": "com.bagusc.myshoes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx6iobmfbLQimDmbAF0npyLsxoNrQcaK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

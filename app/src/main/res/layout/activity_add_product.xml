@@ -8,7 +8,7 @@
     android:padding="16dp"
     android:background="@color/white"
     tools:context=".AddProduct">
-<RelativeLayout
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
    >
@@ -195,8 +195,6 @@
             />
 
     </com.google.android.material.textfield.TextInputLayout>
-
-
 
 
     <!-- Button untuk Mengirim Data ke API -->

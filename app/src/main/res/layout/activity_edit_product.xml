@@ -3,64 +3,154 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
+    android:background="@color/white"
     tools:context=".EditProductActivity">
 
-    <EditText
-        android:id="@+id/editProductName"
+    <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama Produk"/>
+        android:text="Edit Products"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginVertical="10dp"
+        android:textColor="@color/btnp"
+        android:fontFamily="@font/poppinsbold"
+        />
 
-    <EditText
-        android:id="@+id/editProductBrand"
+    <!-- EditText untuk Nama -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editProductName"
-        android:layout_marginTop="16dp"
-        android:hint="Merek"/>
-
-    <EditText
-        android:id="@+id/editProductPrice"
+        android:layout_below="@+id/title"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:hint="Product Name"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/brand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editProductBrand"
-        android:layout_marginTop="16dp"
-        android:inputType="numberDecimal"
-        android:hint="Harga"/>
-
-    <EditText
-        android:id="@+id/editProductDescription"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:layout_below="@+id/name"
+        android:hint="Brand"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editProductBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editProductPrice"
-        android:layout_marginTop="16dp"
-        android:hint="Deskripsi"/>
-
-    <EditText
-        android:id="@+id/editProductStock"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:layout_below="@+id/brand"
+        android:hint="Price"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editProductDescription"
-        android:layout_marginTop="16dp"
-        android:inputType="number"
-        android:hint="Stok"/>
-
-    <EditText
-        android:id="@+id/editProductRating"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:layout_below="@+id/rate"
+        android:hint="Description"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/stock"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editProductStock"
-        android:layout_marginTop="16dp"
-        android:inputType="numberDecimal"
-        android:hint="Rating"/>
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:layout_below="@+id/price"
+        android:hint="Stock"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editProductStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40px"
+        android:layout_marginVertical="10px"
+        android:layout_below="@+id/stock"
+        android:hint="Rating"
+        android:textColorHint="@color/second"
+        app:endIconMode="clear_text"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editProductRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/field"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editProductRating"
+        android:layout_below="@id/desc"
         android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/btnp"
         android:text="Simpan"/>
 
 </RelativeLayout>

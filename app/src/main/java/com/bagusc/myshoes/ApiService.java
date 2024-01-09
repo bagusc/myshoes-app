@@ -40,6 +40,7 @@ public interface ApiService {
     );
 
 
+
     @Multipart
     @POST("api/products")  // Sesuaikan dengan endpoint API yang benar
     Call<Void> uploadProduct(

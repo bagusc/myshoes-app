@@ -46,7 +46,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
         holder.productNameTextView.setText(product.getName());
         holder.productBrandTextView.setText(product.getBrand());
-        holder.productPriceTextView.setText(String.valueOf(product.getPrice()));
+        holder.productPriceTextView.setText("Rp. " + String.valueOf(product.getPrice()));
         holder.productDescTextView.setText(product.getDescription());
         holder.productStockTextView.setText(String.valueOf(product.getStock()));
         holder.productRatingTextView.setText(String.valueOf(product.getRating()));

@@ -83,7 +83,8 @@ public class AddProduct extends AppCompatActivity {
     private void handleApiResponse(String result) {
         // Tambahkan logika penanganan hasil respon dari server di sini
         // Misalnya: Menampilkan pesan sukses atau melakukan tindakan tertentu
-        Toast.makeText(AddProduct.this, "Data berhasil dikirim ke API", Toast.LENGTH_SHORT).show();
+        Toast.makeText(AddProduct.this, "Data berhasil diInput", Toast.LENGTH_SHORT).show();
+        finish();
     }
 
     private void handleApiError(String errorMessage) {

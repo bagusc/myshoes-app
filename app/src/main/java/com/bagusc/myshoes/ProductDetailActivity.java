@@ -41,22 +41,22 @@ public class ProductDetailActivity extends AppCompatActivity {
         Product product = getIntent().getParcelableExtra("PRODUCT");
 
         TextView productNameTextView = findViewById(R.id.productNameTextView);
-        productNameTextView.setText("Nama Produk: " + product.getName());
+        productNameTextView.setText(product.getName());
 
         TextView productBrandTextView = findViewById(R.id.productBrandTextView);
-        productBrandTextView.setText("Merek: " + product.getBrand());
+        productBrandTextView.setText(product.getBrand());
 
         TextView productPriceTextView = findViewById(R.id.productPriceTextView);
-        productPriceTextView.setText("Harga: " + product.getPrice());
+        productPriceTextView.setText("Rp. " + product.getPrice());
 
         TextView productDescTextView = findViewById(R.id.productDescTextView);
-        productDescTextView.setText("Deskripsi: " + product.getDescription());
+        productDescTextView.setText(product.getDescription());
 
         TextView productStockTextView = findViewById(R.id.productStockTextView);
-        productStockTextView.setText("Stok: " + product.getStock());
+        productStockTextView.setText("" + product.getStock());
 
         TextView productRatingTextView = findViewById(R.id.productRatingTextView);
-        productRatingTextView.setText("Rating: " + product.getRating());
+        productRatingTextView.setText("" + product.getRating());
 
         ImageView productImageView = findViewById(R.id.productImageView);
         Picasso.get().load(product.getImage()).into(productImageView);
@@ -144,22 +144,22 @@ public class ProductDetailActivity extends AppCompatActivity {
 
 
                         TextView productNameTextView = findViewById(R.id.productNameTextView);
-            productNameTextView.setText("Nama Produk: " + editedProduct.getName());
+            productNameTextView.setText(editedProduct.getName());
 
             TextView productBrandTextView = findViewById(R.id.productBrandTextView);
-            productBrandTextView.setText("Merek: " + editedProduct.getBrand());
+            productBrandTextView.setText(editedProduct.getBrand());
 
             TextView productPriceTextView = findViewById(R.id.productPriceTextView);
-            productPriceTextView.setText("Harga: " + editedProduct.getPrice());
+            productPriceTextView.setText("Rp. " + editedProduct.getPrice());
 
             TextView productDescTextView = findViewById(R.id.productDescTextView);
-            productDescTextView.setText("Deskripsi: " + editedProduct.getDescription());
+            productDescTextView.setText(editedProduct.getDescription());
 
             TextView productStockTextView = findViewById(R.id.productStockTextView);
-            productStockTextView.setText("Stok: " + editedProduct.getStock());
+            productStockTextView.setText("" + editedProduct.getStock());
 
             TextView productRatingTextView = findViewById(R.id.productRatingTextView);
-            productRatingTextView.setText("Rating: " + editedProduct.getRating());
+            productRatingTextView.setText("" + editedProduct.getRating());
         }
     }
 

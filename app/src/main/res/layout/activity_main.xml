@@ -51,7 +51,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputPass"
+            android:id="@+id/inputEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -74,7 +74,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputEmail"
+            android:id="@+id/inputPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -109,6 +109,7 @@
         android:layout_marginVertical="20px"
         />
 
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -136,20 +137,4 @@
         />
 </LinearLayout>
 
-
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnGoogle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:padding="10dp"
-        android:gravity="start|center_vertical"
-        android:backgroundTint="@color/oren"
-        android:textColor="@android:color/white"
-        app:icon="@drawable/google"
-        app:iconPadding="8dp"
-        app:iconTint="@android:color/white"
-        app:iconSize="24dp"
-        android:text="Continue with Google" />
 </LinearLayout>

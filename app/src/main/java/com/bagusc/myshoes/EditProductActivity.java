@@ -58,7 +58,7 @@ public class EditProductActivity extends AppCompatActivity {
                 // Mengambil data dari elemen UI
                 String newName = editProductName.getText().toString();
                 String newBrand = editProductBrand.getText().toString();
-                double newPrice = Double.parseDouble(editProductPrice.getText().toString());
+                int newPrice = Integer.parseInt(editProductPrice.getText().toString());
                 String newDescription = editProductDescription.getText().toString();
                 int newStock = Integer.parseInt(editProductStock.getText().toString());
                 double newRating = Double.parseDouble(editProductRating.getText().toString());
