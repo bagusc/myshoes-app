@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Masuk berhasil
                             // Tambahkan tindakan yang sesuai di sini
-                            Toast.makeText(MainActivity.this, "Login berhasil!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Login success!", Toast.LENGTH_SHORT).show();
                             // Arahkan ke kelas Dashboard
                             Intent intent = new Intent(MainActivity.this, Dashboard.class);
                             startActivity(intent);

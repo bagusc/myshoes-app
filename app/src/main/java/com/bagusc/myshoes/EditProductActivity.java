@@ -95,7 +95,7 @@ public class EditProductActivity extends AppCompatActivity {
                     resultIntent.putExtra("EDITED_PRODUCT", updatedProduct);
                     setResult(RESULT_OK, resultIntent);
                     // Produk berhasil diperbarui, tambahkan logika sesuai kebutuhan
-                    Toast.makeText(EditProductActivity.this, "Berhasil memperbarui produk", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EditProductActivity.this, "Update Success!", Toast.LENGTH_SHORT).show();
                     finish(); // Menutup activity setelah memperbarui produk
                 } else {
                     // Tampilkan pesan kesalahan jika diperlukan

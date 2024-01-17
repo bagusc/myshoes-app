@@ -8,24 +8,102 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/oren"
         android:gravity="center">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Sepatu"
-            android:fontFamily="@font/poppinssemi"
-            android:textSize="20sp"
-            />
+        <LinearLayout
+            android:id="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="40px"
+            android:layout_marginEnd="40px"
+            android:weightSum="1">
 
-        <TextView
-            android:id="@+id/textViewTotalData"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="0"
-            android:textSize="50sp" />
+            <TextView
+                android:id="@+id/greetingText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Welcome, "
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:fontFamily="@font/poppinsbold" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/btnp"
+                android:drawableTop="@drawable/asignout"
+                android:gravity="right"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bodyPanel"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/topPanel"
+            android:onClick="openDisplayDataActivity"
+            android:focusableInTouchMode="true"
+            >
+
+            <RelativeLayout
+                android:id="@+id/showAll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/topPanel"
+                android:background="@color/btnp"
+
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/button_display_data"
+                    android:layout_width="133dp"
+                    android:layout_height="171dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="215dp"
+                    android:layout_marginBottom="1dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/shoe" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginBottom="149dp"
+                    android:fontFamily="@font/poppinssemi"
+                    android:text="Data Sepatu"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewTotalData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="98dp"
+                    android:layout_marginBottom="19dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="80sp" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,5 +138,11 @@
 
         </LinearLayout>
 
+
+
+
+
     </LinearLayout>
+
+
 </ScrollView>

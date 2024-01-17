@@ -34,6 +34,16 @@
         android:layout_below="@+id/productNameTextView"
         android:orientation="horizontal">
 
+        <TextView
+            android:id="@+id/stok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:text="Stock : "
+            android:drawableStart="@drawable/layers_24"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/productStockTextView"
@@ -41,23 +51,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
             android:text="10"
-            android:drawableStart="@drawable/layers_24"
             android:textSize="14sp"
             android:layout_marginRight="10dp"
             android:layout_gravity="center"
             android:gravity="center"/>
 
-        <TextView
-            android:id="@+id/productRatingTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginEnd="0px"
-            android:drawableStart="@drawable/star_24"
-            android:text="Rating"
-            android:gravity="center"
-            android:textColor="@color/oren"
-            android:textSize="14sp" />
     </LinearLayout>
 
 
@@ -88,6 +86,24 @@
         android:fontFamily="@font/poppinsbold"
         />
 
+
+    <TextView
+        android:id="@+id/productRatingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productImageView"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="-39dp"
+        android:layout_marginEnd="0px"
+        android:layout_marginRight="19dp"
+        android:background="@color/field"
+        android:drawableEnd="@drawable/stars"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Rating"
+        android:textColor="@color/oren"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/productDescTextView"

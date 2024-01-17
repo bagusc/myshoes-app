@@ -106,7 +106,7 @@ public class ProductDetailActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     // Produk berhasil dihapus, tambahkan logika sesuai kebutuhan
                     setResult(RESULT_OK);
-                    Toast.makeText(ProductDetailActivity.this, "Berhasil menghapus produk", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProductDetailActivity.this, "Delete success!", Toast.LENGTH_SHORT).show();
                     finish(); // Menutup activity setelah menghapus produk
                 } else {
                     // Tampilkan pesan kesalahan jika diperlukan
